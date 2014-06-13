@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-public class MealLayer : MonoBehaviour {
+public class AP_MealLayer : MonoBehaviour {
 
 
 	string[] split_value;
@@ -31,11 +31,11 @@ public class MealLayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (meal_string[now_day - 1] != null)
-        {
-            text_mesh.text = meal_string[now_day - 1];
-            text_mesh.Commit();
-        }
+        //if (meal_string[now_day - 1] != null)
+        //{
+        //    text_mesh.text = meal_string[now_day - 1];
+        //   text_mesh.Commit();
+        //}
 
 
 	

@@ -2,7 +2,7 @@
 using System.Collections;
 
 
-public class MainLayerTranstion : MonoBehaviour {
+public class AP_MainLayer : MonoBehaviour {
 	public GameObject Bar;
 
 	enum eState
