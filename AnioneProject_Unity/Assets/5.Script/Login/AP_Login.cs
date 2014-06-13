@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Anione_Login : MonoBehaviour {
+public class AP_Login : MonoBehaviour {
 	public tk2dUITextInput IdText;
 	public tk2dUITextInput PwText;
 
@@ -20,16 +20,16 @@ public class Anione_Login : MonoBehaviour {
 	void LoginCheck()
 	{
 
-		if(IdText.Text.Length == 0)//아이디가 비엇을 경우
+		if(IdText.Text.Length == 0)//아이디가 에러
 		{
 			animation.Play("FaildLogind");
 		}
-		else if(PwText.Text.Length == 0)//비번이 비엇을 경우
+		else if(PwText.Text.Length == 0)//비번이 에러
 		{
 			animation.Play("FaildLogind");
 		}
 
-		//나중에는 예일문이용해서 검사하고 넘기는 방법으로 해야함.
+		//
 		if(IdText.Text.Equals(MyId))
 		{
 			if(PwText.Text.Equals(MyPw))
