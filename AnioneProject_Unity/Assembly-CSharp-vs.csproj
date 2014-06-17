@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\5.Script\BoardLayer\AP_BoardLayer.cs" />
      <Compile Include="Assets\5.Script\Login\AP_Login.cs" />
      <Compile Include="Assets\5.Script\MainLayer\AP_MainLayer.cs" />
      <Compile Include="Assets\5.Script\MealLayer\AP_MealLayer.cs" />

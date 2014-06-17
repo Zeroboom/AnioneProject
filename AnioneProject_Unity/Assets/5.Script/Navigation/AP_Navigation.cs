@@ -4,6 +4,7 @@ using System.Collections;
 public class AP_Navigation : MonoBehaviour
 {
 
+	public GameObject boardLayer;
 
     public tk2dSprite Button0;
     public tk2dSprite Button1;
@@ -25,7 +26,7 @@ public class AP_Navigation : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        ButtonArray[0] = Button0;
+		ButtonArray[0] = Button0;
         ButtonArray[1] = Button1;
         ButtonArray[2] = Button2;
         ButtonArray[3] = Button3;
@@ -45,6 +46,7 @@ public class AP_Navigation : MonoBehaviour
     void OnButton0()
     {
         ReShowButton(0);
+		boardLayer.SetActive (true);
     }
 
     void OnButton1()
@@ -96,7 +98,7 @@ public class AP_Navigation : MonoBehaviour
 
         GameObject.FindGameObjectWithTag("MainLayer").SendMessage("CloseNavigationLayer");
 
-
+		boardLayer.SetActive (false);
     }
 
 }
